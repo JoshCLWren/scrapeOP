@@ -23,9 +23,7 @@ def nfl_2016():
     #     current_season="no",
     #     max_page=3,
     # )
-    import pdb
 
-    pdb.set_trace()
     driver = webdriver.Chrome(executable_path=DRIVER_LOCATION)
     results, successes, fails = scrape_page_typeA(
         3, "american-football", "usa", "nfl", "2016-2017"
@@ -33,10 +31,6 @@ def nfl_2016():
     driver.close()
     print(results)
     print(f"ration of successes: {successes / (successes + fails)}")
-    import pdb
-
-    pdb.set_trace()
-    pass
 
 
 if __name__ == "__main__":
